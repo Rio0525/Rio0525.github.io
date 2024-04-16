@@ -1,0 +1,16 @@
+.hidden{
+    opacity:0;
+}
+.console-container{
+    font-family:sans-serif;
+    font-size:35px;  
+    height:10px;
+    width:700;
+    display:block;
+    position:absolute;       
+}
+.console-underscore{
+    display:inline-block;
+    position:relative;    
+    color :#2b95d3;
+}
