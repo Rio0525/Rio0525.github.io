@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>        
+    <head>
+        <title>Aaron Rio Pantaleon's Portfolio</title>   
+        <link rel="stylesheet" href="style.css">     
+        <link rel="stylesheet" href="textAnim.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+    </head>
+    <body>                      
+        <div class="fixed">            
+            <img class="profilePicture" src="Icons/Icon.jpg" alt="Aaron Rio's Graduation Picture">
+            <h2 style="padding-left: 22px;">Aaron Rio Pantaleon</h2>
+            <div class="icons">
+                <a  href="https://www.facebook.com/aaron.r.pantaleon" target="_blank">
+                    <img class="icon" src="Icons/FB Icon.png"  alt="Redirect to Facebook">
+                    <img class="iconAlt" src="Icons/FB Icon Alt.png"  alt="Redirect to Facebook">
+                </a>
+                <a  href="https://www.linkedin.com/in/aaronpantaleon/" target="_blank">
+                    <img class="icon" src="Icons/LIN Icon.png" alt="Redirect to LinkedIn">
+                    <img class="iconAlt" src="Icons/LIN Icon Alt.png" alt="Redirect to LinkedIn">
+                </a>
+                <a  href="https://github.com/Rio0525" target="_blank">
+                    <img class="icon" src="Icons/GH Icon.png" alt="Redirect to Github">
+                    <img class="iconAlt" src="Icons/GH Icon Alt.png" alt="Redirect to Github">
+                </a>                                
+            </div>        
+            <div id="btnsContainer">
+                <ul>
+                    <li>                        
+                        <button onclick="NavigatePage('Home')" class="navButtons active" name="Home">      
+                            <i class="fa fa-home"></i>
+                            Home
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button onclick="NavigatePage('SkillNTech')" class="navButtons" name="SkillNTech">                           
+                            <i class="fa fa-server"></i>
+                            Skill and Technologies                            
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button onclick="NavigatePage('Portfolio')" class="navButtons" name="Portfolio">    
+                            <i class="fa fa-folder"></i>
+                            Portfolio
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button onclick="NavigatePage('Contacts')" class="navButtons"name="Contacts">
+                            <i class="fa fa-envelope"></i>       
+                            Contacts
+                        </button>
+                    </li>
+                </ul>                
+            </div>
+        </div>                              
+        <ul class="content">
+            <a id="button"></a>
+            <!--Home-->            
+            <section id="Home" class="box">
+                <li class="section" style="align-content: center; padding-left: 100px; padding-top:0;">
+                    <a style="font-size: 55px;">Hi, I'm Aaron Rio Pantaleon</a>
+                    <div class="console-container"><p style="color:white; display: inline;">I'm a </p><span id="text"></span><div class="console-underscore" id="console"><b>|</b></div></div>
+                </li>      
+            </section>                    
+            <!--Skill and Tech-->            
+            <section id="SkillNTech" class="box">
+                <li class="section" style="color: black; background-color: #faf2e4;">
+                    <h1>Skill and Technologies</h1>
+                    <br>
+                    <img src="Icons/LanguageIcon.png" class=sntIcon style="margin-top:15px;">
+                    <img src="Icons/WebIcon.png" class=sntIcon style="margin-top:135px;">
+                    <img src="Icons/DevToolIcon.png" class=sntIcon style="margin-top:255px;">
+                    <img src="Icons/OthersIcon.png" class=sntIcon style="margin-top:375px;">
+                    <div style="padding-left: 150px;">                    
+                        <h2>Languages</h2>
+                        <p>C++, Java, C#, Python </p>                
+                        <br>
+                        <h2>Web</h2>
+                        <p>HTML, CSS, Javascript</p>
+                        <br>
+                        <h2>Development Tool</h2>
+                        <p>Unity, Android Studio, Visual Basic, Net Beans</p>
+                        <br>
+                        <h2>Others</h2>
+                        <p>Excel</p>
+                    </div>
+                </li>
+            </section>
+            <!--Projects-->
+            <section id="Portfolio" class="box">
+                <li class="section" style="color: black; background-color: #d1d1d3;">
+                    <h1>Portfolio</h1>
+                    <div class="proj">
+                        <a href="Sugo.html">
+                        <img src="Pictures/CoverArt.png" class="proj1">                                            
+                        <img src="Pictures/CoverArtAlt.png" class="proj1Alt">
+                        <img src="Pictures/Sugo.png" class="projLogo"></a>
+                    </div>                
+                </li>
+            </section>
+            <!--Contact-->
+            <section id="Contacts" class="box">
+                <li class="section" style="color: black; background-color: white;">
+                    <h1>Contacts</h1>
+                    <div>
+                        <h2>Email:</h2>
+                        <a>pantaleonaaronrio@gmail.com</a>
+                    </div>         
+                </li>
+            </section>
+        </ul>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>          
+        <script src="javaScript.js"></script>
+    </body>    
+</html>
